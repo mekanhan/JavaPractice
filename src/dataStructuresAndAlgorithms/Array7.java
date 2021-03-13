@@ -1,14 +1,8 @@
 package dataStructuresAndAlgorithms;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Array7 {
-    public static final <T> void swap (T[] a, int i, int j) {
-        T t = a[i];
-        a[i] = a[j];
-        a[j] = t;
-    }
     public static void main(String[] args) {
         int[] a = new int[7];
         a[0]=20;
@@ -21,6 +15,8 @@ public class Array7 {
 
         System.out.println(Arrays.toString(a));
         Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+        Arrays.parallelSort(a);
         System.out.println(Arrays.toString(a));
 
     }
