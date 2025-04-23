@@ -1,8 +1,9 @@
-package java_course.section_3;
+package java_course.section1_dataTypes;
 
-public class test_1 {
+public class Casting_example {
 
     public static int numbers (int n){ // This method takes an integer n as input and returns an integer.
+        // when adding static to the method, it can be called without creating an instance of the class.
         int myIntNumber = n + 1; 
         float myFloatNumber = 12.0f;
         int castedNumber = (int) myFloatNumber; // Explicit casting from float to int
@@ -17,6 +18,7 @@ public class test_1 {
 
     public static void main(String[] args) {
         System.out.println(numbers(0));
+        
 
     }
 }
