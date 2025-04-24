@@ -5,8 +5,9 @@ public class JavaSyntax {
         // printMegaBytesAndKilobytes(11026);
         // System.out.println(isLeapYear(1800));
 
-        convertToCentimeters(50);
-        convertToCentimeters(6, 1);
+        // convertToCentimeters(50);
+        // convertToCentimeters(6, 1);
+        getDurationString(3900);
 
         // double myDouble = 20.00;
         // double mySecondDouble = 80.00;
@@ -87,6 +88,33 @@ public class JavaSyntax {
         double conversionFactor2 = 2.54; // inches to cm
         double centimeters = heightFeet * conversionFactor1 + heightInches * conversionFactor2;
         System.out.println("centimeters: " + centimeters);
+    }
+
+    public static String getDurationString(int seconds){
+        String results = "";
+        int minutes = 0;
+        if(seconds >= 60){
+            minutes = seconds / 60;
+            results = getDurationString(seconds, minutes);
+        }
+       System.out.println(results);
+        return results;
+    }
+
+    public static String getDurationString(int seconds, int minutes){
+        String results = " ";
+        int hours = 0;
+        if(minutes > 0){
+            hours = minutes / 60;
+            results = hours + "h " + minutes + "m " + seconds + "s";
+        }
+        else if (minutes < 0 && seconds > 0){
+            hours = seconds / 3600;
+            results = hours + "h " + minutes + "m " + seconds + "s";
+        }
+       
+
+        return results;
     }
 
 
