@@ -112,8 +112,6 @@ public class JavaSyntax {
             hours = seconds / 3600;
             results = hours + "h " + minutes + "m " + seconds + "s";
         }
-       
-
         return results;
     }
 
