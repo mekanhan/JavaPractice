@@ -61,7 +61,7 @@ public class StringWords {
      i 0 to length -1
       j +1 to length() 
     */
-    public static boolean isUniqueCharactertNestedLoop(String input){
+    public static boolean isUniqueCharacterNestedLoop(String input){
 
         for(int i=0; i<input.length() - 1; i++){
             for(int j=i + 1; j<input.length(); j++){
